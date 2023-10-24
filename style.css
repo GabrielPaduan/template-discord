@@ -1,0 +1,270 @@
+html {
+    font-size: 1em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url(img/backgroundHeader.png);
+    height: 506px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header article {
+    width: 85%;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #FFF;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    margin-bottom: 8%;
+    width: 70%;
+}
+
+.texto p {
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 5%;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+}
+
+.botoes button {
+    margin-bottom: 5%;
+    border-radius: 28px;
+    background-color: #FFF;
+    border: none;
+    color: #23272A;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    height: 52px;
+    flex-shrink: 0;
+}
+
+.botoes button:nth-child(2) {
+    background-color: #23272A;
+    color: #FFF;
+}
+
+
+/* MAIN */
+
+section {
+    padding: 40px 24px;
+}
+
+main .divMain {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    justify-content: center;
+}
+
+section:nth-child(even) {
+    background: #F6F6F6;
+}
+
+main section h2, section p {
+    width: 90%;
+    text-align: left;
+    /* margin-bottom: 8%; */
+}
+
+main .divMain figure{
+    width: 379px;
+    height: 252px;
+}
+
+#figure1{
+    background-image: url(img/image1Section.png);
+}
+#figure2{
+    background-image: url(img/image2Section.png);
+}
+#figure3{
+    background-image: url(img/image3Section.png);
+}
+#figure4{
+    background-image: url(img/image4Section.png);
+}
+
+section .divMain h2 {
+    color: #23272A;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin: 0 auto 27px auto;
+}
+
+section .divMain p {
+    color: #23272A;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+footer {
+    display: flex;
+    height: 140px;
+    justify-content: center;
+    align-items: center;
+    background: #23272A;
+}
+
+footer figure {
+    width: 162px;
+    height: 45px;
+    background-image: url(img/logoDiscordFooter.png);
+}
+
+@media screen and (min-width: 1200px){
+    header {
+        background-image: url(imgMaiores/backgroundHeaderBig.png);
+        /* background-size: 1280px 459px; */
+        background-position: center;
+    }
+
+    header section {
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    h1 {
+        font-size: 56px;
+        text-align: center;
+        margin: 5% auto;
+        width: 60%;
+    }
+    
+    .texto p {
+        text-align: center;
+    }
+    
+    .botoes {
+        flex-direction: row;
+        gap: 16px;
+        justify-content: center;
+    }
+
+    .botoes button {
+        height: 44px;  
+        padding: 10px; 
+    }
+    
+    /* MAIN */
+
+    main .divMain {
+        flex-direction: row;
+        align-items: center;
+        width: 80%;
+        height: 394px;
+        margin: 0 auto;
+    }
+    #divMain2 {
+        flex-direction: row-reverse;
+    }
+
+    main .divMain figure{
+        width: 60%;
+    }
+
+    main .divMain figure{
+        width: 607px;
+        height: 394px;
+    }
+    #figure1{
+        background-image: url(imgMaiores/imagem1Section.png);
+    }
+    #figure2{
+        background-image: url(imgMaiores/imagem2Section.png);
+    }
+    #figure3{
+        background-image: url(imgMaiores/imagem3Section.png);
+    }
+    #figure4{
+        background-image: url(imgMaiores/imagem4Section.png);
+    }
+
+    main .divMain .articleMain {
+        width: 40%;
+       
+    }
+    
+    section .divMain h2 {
+        font-size: 40px;
+        font-weight: 800;
+    }
+    
+    section .divMain p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    #divMain4 {
+        flex-direction: column;
+        height: auto;
+        width: 70%;
+    }
+
+    #divMain4 .articleMain {
+        width: 80%;
+    }
+
+    #divMain4 .articleMain h2 {
+        width: 70%;
+        text-align: center;
+    }
+
+    #divMain4 .articleMain p {
+        text-align: center;
+        width: 80%;
+    }
+
+    #divMain4 figure {
+        width: 784px;
+        height: 508px;
+    }
+    
+    footer {
+        height: 134px;
+    }
+
+    footer figure {
+        width: 230px;
+        height: 63px;
+        background-image: url(imgMaiores/discordMaior.png);
+    }
+}
